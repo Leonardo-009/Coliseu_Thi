@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+label, input, select, textarea, button {
+    margin: 5px 0;
+}

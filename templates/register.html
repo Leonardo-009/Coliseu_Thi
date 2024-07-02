@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+<h1>Registro</h1>
+<form method="post" action="{{ url_for('register') }}">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="age">Idade:</label>
+    <input type="number" id="age" name="age" required>
+    <label for="phone">Telefone:</label>
+    <input type="text" id="phone" name="phone" required>
+    <label for="year_to_go_japan">Ano que irá para o Japão:</label>
+    <input type="number" id="year_to_go_japan" name="year_to_go_japan" required>
+    <label for="school">Escola:</label>
+    <input type="text" id="school" name="school" required>
+    <label for="interests">Interesses:</label>
+    <input type="text" id="interests" name="interests" required>
+    <label for="plans_in_japan">O que pretende fazer no Japão:</label>
+    <input type="text" id="plans_in_japan" name="plans_in_japan" required>
+    <label for="roommate_preference_age">Idade de quem gostaria de compartilhar o quarto:</label>
+    <input type="number" id="roommate_preference_age" name="roommate_preference_age" required>
+    <label for="gender">Sexo:</label>
+    <select id="gender" name="gender" required>
+        <option value="M">Masculino</option>
+        <option value="F">Feminino</option>
+    </select>
+    <label for="about">Sobre você:</label>
+    <textarea id="about" name="about"></textarea>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Registrar</button>
+</form>
+{% endblock %}
